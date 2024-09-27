@@ -1,0 +1,92 @@
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #795a79, #3e4e48); /* Gradient background */
+  color: #fff;
+  text-align: center;
+}
+
+/* Header Styling - Long Translucent Band */
+.header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.1); /* Translucent effect */
+  backdrop-filter: blur(5px);
+  border-radius: 50px; /* Round ends */
+  margin: 30px auto 0;
+  width: 90%;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.header-content h1 {
+  font-size: 36px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+}
+
+.header-content p {
+  font-size: 18px;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Blog Post Styling */
+.blog-post {
+  background: rgba(148, 45, 189, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.blog-post h2 {
+  color: #ffffff;
+  font-size: 28px;
+  margin: 0 0 10px 0;
+}
+
+.blog-post p {
+  font-size: 16px;
+  color: #ddd;
+  line-height: 1.6;
+}
+
+.blog-post button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.blog-post button:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+/* Hover effects */
+.blog-post:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
