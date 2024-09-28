@@ -22,14 +22,27 @@
 
   <div class="container">
     <section class="blog-post">
-      <h2>A General Overview of Me</h2>
+      <h2>Introduction</h2>
       <h3>Hi there!</h3>
-      <p>You may be wondering who I am? Well.. to be fair, my name is Muhammad Ahmad Khan but you can call me Ahmad.<br> Well, since we're done with the introduction lets move on to the next part where I actually tell you more about myself.<br> Ahmad is basically an A-level student residing in Pakistan (Yes, I am refering to myself in 3rd person).</p>
+      <p>Hey there! If you’re here, you’re probably wondering who I am. Well, let me ease your curiosity—my name’s Muhammad Ahmad Khan, though most people just call me Ahmad. Since we’ve already crossed the introduction bridge, how about I share a little more about myself?<br> Well, since we're done with the introduction lets move on to the next part where I actually tell you more about myself.<br> I’m currently navigating the rollercoaster ride of being an A-level student in Pakistan.</p>
       <div class="more-content">
-        <p>Being interested in sports, I highly take interest in Horse-Back Riding (one of my favorite sports TBH).<br> Not to mention, I love horses too. Anyway, to further elaborate, aside from sports like: Tent pegging, Volleyball, Tennis, Badminton, I am actually very interested in technical stuff... More like an engineer or so.</p> 
+        <p>But beyond the textbooks and exams, there's a whole side of me that thrives on the outdoors.<br> I have this deep love for horseback riding—there’s something about the rhythm and connection with horses that makes it one of my favorite things to do. And, honestly, if it involves horses, I’m there! That’s not to say I don’t enjoy other sports. You can often find me on the volleyball court, swinging a tennis racket, or even in the middle of tent pegging training (it’s more intense than it sounds, trust me!).</p>
+        <p>Of course, life isn’t just all sports for me. I have this natural curiosity for all things technical. I’m the type who loves to figure out how things work—taking stuff apart, solving problems—it’s like a mental puzzle I can’t get enough of. So, naturally, I’m leaning towards a future in engineering. Who knows what the future holds, right?</p> 
       </div>
       <button class="read-more-btn">Read More</button>
     </section>
+
+    <section class="blog-post">
+      <h2>Early years</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a bibendum libero. Vivamus consequat
+        varius interdum. Etiam hendrerit orci orci, eget gravida eros malesuada sit amet.</p>
+      <div class="more-content">
+        <p>Aliquam erat volutpat. Fusce aliquet massa in ante elementum, in gravida sapien ornare. Nullam venenatis
+        tristique erat nec placerat. Cras lobortis libero eu nulla pharetra, ac fermentum arcu posuere.</p>
+      </div>
+      <button class="read-more-btn">Read More</button>
+    </section>
+  
 
     <section class="blog-post">
       <h2>Another Blog Post Title</h2>
@@ -41,8 +54,6 @@
       </div>
       <button class="read-more-btn">Read More</button>
     </section>
-  </div>
-
     <section class="blog-post">
       <h2>Another Blog Post Title</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a bibendum libero. Vivamus consequat
@@ -53,19 +64,41 @@
       </div>
       <button class="read-more-btn">Read More</button>
     </section>
+  
   </div>
 
-    <section class="blog-post">
-      <h2>Another Blog Post Title</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque a bibendum libero. Vivamus consequat
-        varius interdum. Etiam hendrerit orci orci, eget gravida eros malesuada sit amet.</p>
-      <div class="more-content">
-        <p>Aliquam erat volutpat. Fusce aliquet massa in ante elementum, in gravida sapien ornare. Nullam venenatis
-        tristique erat nec placerat. Cras lobortis libero eu nulla pharetra, ac fermentum arcu posuere.</p>
+  <footer class="footer">
+    <div class="social-icons">
+      <div class="social-item">
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <p>Facebook</p>
       </div>
-      <button class="read-more-btn">Read More</button>
-    </section>
-  </div>
+      <div class="social-item">
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <p>Twitter</p>
+      </div>
+      <div class="social-item">
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <p>Instagram</p>
+      </div>
+      <div class="social-item">
+        <a href="https://www.linkedin.com" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <p>LinkedIn</p>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Font Awesome Script -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  
 
   <script>
     document.querySelectorAll('.read-more-btn').forEach(button => {
@@ -73,7 +106,7 @@
         const moreContent = this.previousElementSibling;
         if (moreContent.style.display === "none" || moreContent.style.display === "") {
           moreContent.style.display = "block";
-          this.textContent = "Show Less";
+          this.textContent = "Read Less";
         } else {
           moreContent.style.display = "none";
           this.textContent = "Read More";
