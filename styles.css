@@ -3,10 +3,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #795a79, #3e4e48); /* Gradient background */
+  background: linear-gradient(135deg, #2b0d0d, #4c1d3ecf, #2b0d0d); /* Gradient background */
   color: #fff;
   text-align: center;
-}
+
 
 /* Header Styling - Long Translucent Band */
 .header {
@@ -14,18 +14,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100px;
-  background: rgba(255, 255, 255, 0.1); /* Translucent effect */
-  backdrop-filter: blur(5px);
-  border-radius: 50px; /* Round ends */
+  height: 60px;
+  background: rgba(170, 163, 163, 0.227); /* Translucent effect */
+  backdrop-filter: blur(70px);
+  border-radius: 100px; /* Round ends */
   margin: 30px auto 0;
-  width: 90%;
+  width: 75%;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
   padding: 20px;
+  border: 1px solid rgba(147, 142, 142, 0.795)
 }
 
 .header-content h1 {
-  font-size: 36px;
+  font-size: 25px;
   color: #ffffff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   margin: 0;
@@ -47,18 +48,18 @@ body {
 
 /* Blog Post Styling */
 .blog-post {
-  background: rgba(148, 45, 189, 0.1);
+  background: rgba(51, 122, 115, 0.1);
   backdrop-filter: blur(5px);
   border-radius: 15px;
   padding: 20px;
   margin: 20px 0;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 10px rgba(124, 28, 28, 0.3);
+  border: 1px solid rgb(255, 255, 255);
   transition: all 0.3s ease;
 }
 
 .blog-post h2 {
-  color: #ffffff;
+  color: #aa9fa7e2;
   font-size: 28px;
   margin: 0 0 10px 0;
 }
@@ -89,4 +90,45 @@ body {
 .blog-post:hover {
   transform: translateY(-10px);
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(98, 93, 93, 0.273); 
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0073e6; /* Hover color */
+}
+
+.social-icons p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.social-item {
+  text-align: center;
+}
+
+
 }
